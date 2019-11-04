@@ -98,10 +98,16 @@ margin-right: 3%;
 nav{
 	display:flex;
 	justify-content: space-around;
-	width:70%;
+	width:80%;
 	color: lightgrey;
 	word-spacing: 6vw;
-	vertical-align: middle;
+    vertical-align: middle;
+    margin: auto;
+}
+nav a{
+    color: lightgrey; 
+    text-decoration: none;
+    margin: 5%;
 }
 
 .firsteyes{
@@ -194,7 +200,7 @@ nav{
 	display: flex;
 	flex-direction: column;
 	width:200px;
-	margin:auto 2%;
+	margin:auto 4%;
 	padding:1%
 }
 
@@ -276,6 +282,10 @@ li{
 	list-style-position: outside;
 }
 
+img.middle-img{
+    width: 100%;
+    }
+
 @media screen and (max-width: 600px) {
 	 .info-card{
 		 width: 100%;
@@ -291,4 +301,76 @@ li{
 		 top:60vh;
 	}
 	
+}
+
+/* media querries at 500 and 800 */
+
+@media screen and (max-width: 800px ){
+
+       header{
+            flex-direction: column-reverse;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            align-items: center;
+            align-content: stretch;
+            position: relative;
+            margin: auto;
+      }
+       nav {
+        margin: 5%;
+        display: flex;
+
+      }
+
+
+    .firsteyes h1{
+        margin: auto;
+    }
+    .firsteyes button{
+        margin: auto;
+    }
+    .firsteyes img{
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 500px ){
+
+    header{
+        margin: 0px;
+    }
+    nav {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        align-content: stretch;
+        width: 100%;
+        margin:0px;
+    }
+    nav a{
+        border-bottom: 1px solid lightgrey;
+        text-align: center;
+        width: 100%;
+    }
+
+    .firsteyes h1{
+        width: 100%;
+
+    }
+
+    .mid{
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: center;
+        align-content: stretch;
+    }
+    .fa{
+        width: 100%;
+    }
+
+    .spv{
+        width: 100%
+    }
 }
